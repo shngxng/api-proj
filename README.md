@@ -46,20 +46,20 @@ API accessible at: http://127.0.0.1:5000/
 ## Implementation 
 
 ### Program structure 
-api-proj/
-|-- app
-|   |-- __init__.py
-│   |-- models.py          # Database models for User and Case
-│   |-- services/          # Business logic for authentication and case management
-│   │   |-- user_service.py
-│   │   |__ case_service.py
-│   |-- routes/            # RESTful API routes
-│   │   |-- auth.py
-│   │   |__ cases.py
-│   |__ migrations/
-|-- requirements.txt
-|-- run.py
-|__ README.md
+api-proj/ \
+|-- app \
+|   |-- __init__.py \
+│   |-- models.py          # Database models for  User and Case \
+│   |-- services/          # Business logic for authentication and case management \
+│   │   |-- user_service.py \
+│   │   |__ case_service.py \
+│   |-- routes/            # RESTful API routes \
+│   │   |-- auth.py \
+│   │   |__ cases.py \
+│   |__ migrations/ \
+|-- requirements.txt \
+|-- run.py \
+|__ README.md \
 
 **Database Models (app/models.py)**
 - User: Stores user credentials and roles (Junior / Senior).
