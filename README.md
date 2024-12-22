@@ -16,7 +16,7 @@ Only authenticated users can access case and user role management endpoints.
 
 
 ## Tech stack
-- Backend: Flask, Flask-RESTX
+- Backend: Flask, Flask-RESTX 
 - Database: SQLite with SQLAlchemy
 - Authentication: Flask-JWT-Extended
 
@@ -84,6 +84,8 @@ api-proj/ \
 |__ README.md 
 
 ### Codebase
+
+On the index page, Swagger UI has been auto-generated which is provided by Flask-RESTx. This was for easy API testing. 
 
 **Database Models (app/models.py)**
 - User: Stores user credentials and roles (Junior / Senior).
