@@ -22,23 +22,23 @@ Only authenticated users can access case and user role management endpoints.
 
 ## Setup
 1. Clone repo
-git clone https://github.com/shngxng/api-proj.git
-cd api-proj
+- git clone https://github.com/shngxng/api-proj.git
+- cd api-proj
 
 2. set up virtual env
-python3 -m venv myenv
-source myenv/bin/activate  
+- python3 -m venv myenv
+- source myenv/bin/activate  
 
 3. install dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 4. initialise database
-flask db init
-flask db migrate -m "initial migration"
-flask db upgrade
+- flask db init
+- flask db migrate -m "initial migration"
+- flask db upgrade
 
 5. Start the development server
-flask run
+- flask run
 
 **Deployment on Render:**
 API accessible at: https://clinic-api-j0nm.onrender.com/
@@ -85,10 +85,12 @@ api-proj/ \
 
 **Database Models (app/models.py)**
 - User: Stores user credentials and roles (Junior / Senior).
+
 - Case: Therapy cases.
 
 **Services (app/services/)**
 - user_service.py: Handles user registration, login, promotion, and demotion.
+
 - case_service.py: Handles fetching and adding therapy cases.
 
 **Routes (app/routes/)**
