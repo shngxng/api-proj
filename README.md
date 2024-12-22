@@ -83,6 +83,8 @@ api-proj/ \
 |-- run.py \
 |__ README.md 
 
+### Codebase
+
 **Database Models (app/models.py)**
 - User: Stores user credentials and roles (Junior / Senior).
 
