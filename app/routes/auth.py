@@ -47,7 +47,7 @@ class Promote(Resource):
     @jwt_required() 
     def post(self):
         user = get_jwt_identity() 
-        current_user=User.query.filter_by(username=user).first()
+
         data = auth_ns.payload  
         username = data.get('username')
         password = data.get('password')
