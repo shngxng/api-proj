@@ -59,7 +59,7 @@ api-proj/ \
 │   |__ migrations/ \
 |-- requirements.txt \
 |-- run.py \
-|__ README.md \
+|__ README.md 
 
 **Database Models (app/models.py)**
 - User: Stores user credentials and roles (Junior / Senior).
