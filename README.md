@@ -31,10 +31,12 @@ cd api-proj
 ```
 python3 -m venv myenv
 source myenv/bin/activate 
-`` 
+```
 
 3. install dependencies
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 4. initialise database
 ```
@@ -59,6 +61,7 @@ API accessible at: https://clinic-api-j0nm.onrender.com/
   "password": ""
 }
 ```
+
 3. Response should read welcome message. 
 
 4. Test POST method for inserting a new case: https://clinic-api-j0nm.onrender.com/therapy/case
@@ -116,3 +119,7 @@ On the index page, Swagger UI has been auto-generated which is provided by Flask
     1. /therapy/cases (GET): Fetch the list of all cases.
     2. /therapy/case (POST): Adds a case.
 
+
+
+On Chrome, if encountered HTTP error 403 (local testing), 
+chrome://net-internals/#sockets -> flush socket pools
