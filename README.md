@@ -75,6 +75,10 @@ API accessible at: https://clinic-api-j0nm.onrender.com/
 }
 ```
 
+**Swagger UI**
+- 1. After logging in to existing user, copy access token.
+- 2. Click onto the green 'Authorize' button, added: "Bearer [paste token here]"
+- 3. The lock icon should appear as locked. 
 
 ## Implementation 
 

@@ -16,7 +16,6 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'secretkey123'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///clinic.db'
-    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join('', 'db.sqlite3')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # migrate.init_app(app, db)
@@ -24,7 +23,7 @@ def create_app():
     jwt = JWTManager(app)
     migrate = Migrate(app, db)
     api = Api(app, 
-              title="Mental Health API", 
+              title="Mental Health Clinic API", 
               version="1.0", 
               description="API for clinicians to manage therapy cases", 
               security="Bearer Auth",  
