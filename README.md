@@ -45,7 +45,7 @@ flask db migrate -m "initial migration"
 flask db upgrade
 ```
 
-5. Start the development server
+5. Start the development server:
 ```flask run```
 
 **Deployment on Render:**
@@ -58,7 +58,7 @@ API accessible at: https://clinic-api-j0nm.onrender.com/
 ```
 {
   "username": "joel87",
-  "password": ""
+  "password": "pwjoel87"
 }
 ```
 
