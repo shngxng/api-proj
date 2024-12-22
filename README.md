@@ -22,23 +22,29 @@ Only authenticated users can access case and user role management endpoints.
 
 ## Setup
 1. Clone repo
-- git clone https://github.com/shngxng/api-proj.git
-- cd api-proj
+```
+git clone https://github.com/shngxng/api-proj.git
+cd api-proj
+```
 
 2. set up virtual env
-- python3 -m venv myenv
-- source myenv/bin/activate  
+```
+python3 -m venv myenv
+source myenv/bin/activate 
+`` 
 
 3. install dependencies
-- pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 4. initialise database
-- flask db init
-- flask db migrate -m "initial migration"
-- flask db upgrade
+```
+flask db init
+flask db migrate -m "initial migration"
+flask db upgrade
+```
 
 5. Start the development server
-- flask run
+```flask run```
 
 **Deployment on Render:**
 API accessible at: https://clinic-api-j0nm.onrender.com/
@@ -47,22 +53,24 @@ API accessible at: https://clinic-api-j0nm.onrender.com/
 1. POST method: https://clinic-api-j0nm.onrender.com/auth/login
 
 2. Insert Body (Raw in JSON format):
+```
 {
   "username": "joel87",
   "password": ""
 }
-
+```
 3. Response should read welcome message. 
 
 4. Test POST method for inserting a new case: https://clinic-api-j0nm.onrender.com/therapy/case
     - Copy Access token
     - Add Authorization, Auth Type = Bearer Token and paste access token
     - Insert Body (Raw in JSON format):
+```
 {
   "name": "noelle",
   "description": "Testing"
 }
-
+```
 
 
 ## Implementation 
